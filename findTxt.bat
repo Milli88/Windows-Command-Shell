@@ -1,0 +1,1 @@
+Dir | find ".txt" | more
