@@ -1,0 +1,9 @@
+Let’s consider an example from the stock file of an electronics store. 
+This file is a text file named Stock.txt that contains the name of the items, 
+their part number, the number currently in stock, their reorder level, and the total number sold. 
+The first line of this file reads as follows:
+
+Calculators    CA5600125    75    15    45
+You can parse the file using the For command as follows:
+
+For /F "tokens=1-5" %%A in (stock.txt) do )@echo Item: %%A Part Number: %%B In Stock: %%C Reorder: %%D Sold: %%E)
