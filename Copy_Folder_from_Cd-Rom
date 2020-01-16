@@ -1,0 +1,8 @@
+@Echo Off
+:Begin
+Copy E:\Suptools\*.*
+Echo Please insert Windows Server 2003 CD-ROM in the CD drive
+PAUSE
+Goto End
+
+:End
