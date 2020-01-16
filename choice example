@@ -1,0 +1,5 @@
+Rem Press Y for Yes, N for No, or C to Cancel
+
+
+
+Choice /c YNC /t 10 /d C /m "Press Y for Yes, N for No, or C to Cancel"
