@@ -1,0 +1,9 @@
+@Echo off
+Rem *File Name: CDCopy.bat*
+Rem *This batch file copies the contents of a CD-ROM drive E
+Rem * To a folder C:\test on the hard drive*
+Rem *Author-Gary B.*
+Rem
+Echo Insert the CD-Rom in CD drive
+Pause
+Xcopy E:\*.* C:\test
