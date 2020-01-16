@@ -1,0 +1,13 @@
+In this example, :End is a text string known as a label. The batch file first prompts the user to insert a floppy disk in drive
+A:. The user would insert the disk and press the Enter key. If the Chkdsk command runs successfully, the Goto
+command transfers control to the line identified by the :End label and the program ends. Otherwise, 
+an error message is displayed
+
+
+@Echo off
+Echo Please insert a disk in drive A
+Pause
+Chkdsk A: /f
+If not errorlevel 1 goto End
+Echo An error occurred while performing disk check.
+:End
