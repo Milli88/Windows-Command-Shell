@@ -1,0 +1,8 @@
+@Echo off
+Rem This command sets local variables
+Rem Localization ends when 
+Rem Processing of Mybatch2.bat file is complete
+Setlocal
+Path=%path%;C:\Myfiles;D:\Myscripts
+Call Mybatch2.bat
+Endlocal
