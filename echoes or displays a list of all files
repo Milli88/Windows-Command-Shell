@@ -1,0 +1,4 @@
+@Rem The command is initialized by the %%A variable. The value of the %%A variable is replaced in each file with a .doc extension found in the C:\Myfiles directory and the Echo command is processed for each of these files. 
+@Rem The final output echoes or displays a list of all files
+
+For %%A in (C:\Myfiles\*.doc) do (echo %%A)
