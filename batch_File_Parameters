@@ -1,0 +1,18 @@
+Batch File Parameters
+-----------------------------------
+You use parameters in batch files to get information about environment settings. 
+These parameters are denoted by the expansion variables %0 through %9. The %0 variable is 
+replaced with the name of the batch file currently being processed. You can specify other variables from %1 to %9 
+inside the batch file using argument types at the command prompt. For example, if you have two folders named Folder1 and Folder2, 
+and you want to copy all the files and subfolders in C:\Folder1 to D:\Folder2, you would use the following command at the command 
+prompt:
+-------------------------------------
+Xcopy C:\Folder1\*.* D:\Folder2
+Using batch file parameters, you would create a batch file named Mybatch.bat and include the following command:
+
+Xcopy %1\*.* %2
+Save the file and run the following command from the command prompt:
+
+Mybatch1.bat C:\Folder1 D:\Folder2
+In this command, the variable %1 refers to C:\Folder1 and the variable %2 refers to D:\Folder2. When the command is run, 
+all the files and folders from C:\Folder1 will be copied to D:\Folder2.
