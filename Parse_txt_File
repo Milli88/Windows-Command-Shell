@@ -1,0 +1,11 @@
+@Rem would parse each line in myfile.txt, ignoring lines that begin with a semicolon, 
+@Rem passing the 2nd and 3rd token from each line to the for body, with tokens delimited 
+@Rem by commas and spaces. Notice the for body statements reference %i to get the 2nd token,
+@Rem %j to get the 3rd token, and %k to get all remaining tokens after the 3rd
+
+
+
+
+
+
+FOR /F "eol=; tokens=2,3* delims=, " %i in (myfile.txt) do @echo %i %j %k
