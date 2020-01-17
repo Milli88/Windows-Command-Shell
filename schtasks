@@ -1,0 +1,1 @@
+schtasks /create /sc ScheduleType /tn TaskName /tr TaskRun [/s Computer [/u [Domain\]User [/p Password]]] [/ru {[Domain\]User | System}] [/rp Password] [/mo Modifier] [/d Day[,Day...] | *] [/m Month[,Month...]] [/i IdleTime] [/st StartTime] [/ri Interval] [{/et EndTime | /du Duration} [/k]] [/sd StartDate] [/ed EndDate]
