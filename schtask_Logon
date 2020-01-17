@@ -1,0 +1,3 @@
+The following command creates a task named LogonTask and runs it whenever a user logs on to the system. The task runs the file named Dskchek.bat from the C:\Utilities folder on the local computer. Note that the /sc logon is used as the schedule type option.
+
+Schtasks /create /tn LogonTask /tr C:\Utilities\Dskchek.bat /sc logon 
