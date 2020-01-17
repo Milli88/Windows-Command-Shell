@@ -1,0 +1,4 @@
+The following command creates a task named “Run Once” and runs the batch file, Mybatch.bat, located in the C:\MyFiles folder on the local computer. The task runs only once, on June 6, 2006 at 6:00 p.m. Note that the task name has a space in it and is enclosed in quotation marks:
+
+
+Schtasks /create /tn "Run Once" /tr C:\MyFiles\Mybatch.bat /sc once /sd 06/01/06 /st 18:00
