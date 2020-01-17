@@ -1,0 +1,7 @@
+Using Log Files for schtasks Queries
+
+Sometimes it is not possible to view the results of an schtasks query onscreen. When this happens, you can run the schtasks /Query command and collect the results in a log file using the CSV format. In the following example, the schtasks /Query command collects the query results and saves them in a file named C:\MyFiles\TaskLogs\SchQuery.csv on the local computer. The /nh parameter is used to suppress column headings from the query results and the redirection parameter (>>) sends the output to a file rather than to the command prompt window.
+Schtasks /query /fo /nh CSV >> C:\MyFiles\TaskLogs\SchQuery.csv
+
+The following example illustrates how you can use this command to collect information about the scheduled tasks on a remote computer named HRFileSvr01and save the results in a log file named C:\MyFiles\TaskLogs\SchQuery1.csv on a local computer named MyComp1. In this example, you have to specify the complete computer name and the path of the log file on the local computer because the command will run on the remote computer. If you do not specify the full path, the command will send the output to the remote computer where it is run.
+Schtasks /query /s HRFileSrv01 /fo /nh CSV >> \\MyComp1\C:\MyFiles\TaskLogs\SchQuery1.csv
