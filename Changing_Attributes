@@ -1,0 +1,10 @@
+Changing Attributes
+
+You can use the Attrib command with files as well as with directories. It is a simpler way to change the attributes of multiple files instead of performing the same task using Windows Explorer (where you have to navigate to each file or folder to change its attributes). Simply use the Attrib command with an appropriate parameter and a correct + or – sign and you are done. For example, the following command changes the read-only attribute of the HRReport.doc file in the D:\HRFiles folder to make it read-only:
+Attrib +r D:\HRFiles\HRReport.doc
+
+The following command will change the attributes of all files with .log extensions in the C:\Logs folder to hidden:
+Attrib +h C:\Logs\*.log
+
+The following command will clear the read-only attribute of all files and subdirectories in C:\MyFiles\Scripts. Note the use of the /s parameter:
+Attrib –r C:\MyFiles\Scripts\*.* /s
