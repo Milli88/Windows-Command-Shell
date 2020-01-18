@@ -1,0 +1,4 @@
+You manage file attributes from the command line using the Attrib command, which allows you to view, 
+add, change, and remove file attributes. The syntax of this command is:
+
+attrib [[Drive:][Path] FileName] [{+r | -r}] [{+h | -h}] [{+s | -s}] [{+a | -a}] [/s[/d]]
