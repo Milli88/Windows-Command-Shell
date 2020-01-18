@@ -1,0 +1,6 @@
+
+Find a file with a spacey name such as ITAC KMI DAR QUICK STEPS.DOCX. Make sure to use """"
+
+
+
+dir | find ""*dar*.docx"" | more
