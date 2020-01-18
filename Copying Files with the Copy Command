@@ -1,0 +1,8 @@
+Copying Files with the Copy Command
+
+You use the Copy command to copy one or more files from one location. 
+You can use it to copy files from one directory to another on the local computer or on the mapped 
+network drive of another computer. You can also use this command to copy files to devices such as LPT1 or COM1 in binary format. 
+
+The syntax of this command is:
+Copy [/d] [/v] [/n] [{/y | /-y}] [/z] [{/a | /b}] Source [{/a | /b}] [+ Source [{/a | /b}] [+ ...]] [Destinati
